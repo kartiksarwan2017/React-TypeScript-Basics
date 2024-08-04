@@ -1,6 +1,9 @@
 import Box from "./components/Box";
+import { useState } from "react";
 
 function App() {
+
+  const [val, setVal] = useState<string>("");
 
   return (
     <>
@@ -13,7 +16,7 @@ function App() {
         <button>Click Me</button>
       </Box> */}
 
-      <Box label="Search" value={""} onChange={() => {}} />
+      <Box label="Search" value={val} setter={setVal} />
     </div>
     </>
   )
